@@ -1,9 +1,7 @@
 package com.cmanon.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by cmanon on 7/14/16.
@@ -13,16 +11,25 @@ import javax.persistence.Table;
 public class Location {
 
     @Id
-    @GeneratedValue
-    private final Long id;
-    private final Long latitude;
-    private final Long longitude;
-    private final String name;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+    private double latitude;
+    private double longitude;
+    private String name;
 
-    public Location(long id, long latitude, long longitude, String name) {
+    public void setId(long id) {
         this.id = id;
+    }
+
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
+    }
+
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -30,11 +37,11 @@ public class Location {
         return id;
     }
 
-    public long getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
-    public long getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
 

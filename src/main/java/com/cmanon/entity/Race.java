@@ -13,18 +13,26 @@ public class Race {
 
     @Id
     @GeneratedValue
-    private final long id;
+    private long id;
 
-    private final String name;
+    private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @ManyToOne (cascade = CascadeType.ALL)
     @JoinColumn(name = "location_id")
-    private final List<Location> location;
+    private Location location;
 
-    public Race(long id, String name, List<Location> location) {
+//    public Race(long id, String name, List<Location> location) {
+//        this.id = id;
+//        this.name = name;
+//        this.location = new ArrayList<Location>(location);
+//    }
+
+    public void setId(long id) {
         this.id = id;
+    }
+
+    public void setName(String name) {
         this.name = name;
-        this.location = new ArrayList<Location>(location);
     }
 
     public long getId() {
@@ -35,7 +43,11 @@ public class Race {
         return name;
     }
 
-    public List<Location> getLocation() {
+    public Location getLocation() {
         return location;
+    }
+
+    public void setLocations(Location location) {
+        this.location = location;
     }
 }
