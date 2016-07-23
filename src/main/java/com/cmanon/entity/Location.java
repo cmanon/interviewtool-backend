@@ -1,6 +1,8 @@
 package com.cmanon.entity;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -15,7 +17,9 @@ public class Location {
     private long id;
     private double latitude;
     private double longitude;
-    private String name;
+    private String user;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date date = new Date();
 
     public void setId(long id) {
         this.id = id;
@@ -29,8 +33,12 @@ public class Location {
         this.longitude = longitude;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUser(String name) {
+        this.user = name;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public long getId() {
@@ -45,7 +53,11 @@ public class Location {
         return longitude;
     }
 
-    public String getName() {
-        return name;
+    public String getUser() {
+        return user;
+    }
+
+    public Date getDate() {
+        return date;
     }
 }
