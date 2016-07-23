@@ -1,4 +1,4 @@
-package com.cmanon.entity;
+package bike.trestorres.entity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;

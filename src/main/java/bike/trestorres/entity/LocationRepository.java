@@ -1,4 +1,4 @@
-package com.cmanon.entity;
+package bike.trestorres.entity;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;

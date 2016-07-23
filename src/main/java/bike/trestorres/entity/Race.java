@@ -1,8 +1,6 @@
-package com.cmanon.entity;
+package bike.trestorres.entity;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by cmanon on 7/14/16.
