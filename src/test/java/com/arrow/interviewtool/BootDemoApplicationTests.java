@@ -1,5 +1,6 @@
-package bike.trestorres;
+package com.arrow.interviewtool;
 
+import com.arrow.interview.LocationApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.SpringApplicationConfiguration;
