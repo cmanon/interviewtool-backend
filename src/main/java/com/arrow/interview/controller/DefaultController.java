@@ -1,4 +1,4 @@
-package bike.trestorres.controller;
+package com.arrow.interview.controller;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;

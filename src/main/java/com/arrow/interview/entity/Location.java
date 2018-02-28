@@ -1,9 +1,7 @@
-package bike.trestorres.entity;
+package com.arrow.interview.entity;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by cmanon on 7/14/16.
@@ -24,7 +22,7 @@ public class Location {
     public void setId(long id) {
         this.id = id;
     }
-
+ 
     public void setLatitude(double latitude) {
         this.latitude = latitude;
     }

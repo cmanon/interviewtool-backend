@@ -1,4 +1,4 @@
-package bike.trestorres.entity;
+package com.arrow.interview.entity;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;

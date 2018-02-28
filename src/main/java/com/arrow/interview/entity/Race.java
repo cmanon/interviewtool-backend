@@ -1,4 +1,4 @@
-package bike.trestorres.entity;
+package com.arrow.interview.entity;
 
 import javax.persistence.*;
 
